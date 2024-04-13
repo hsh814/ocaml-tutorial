@@ -20,3 +20,13 @@ let classify x =
   | x when x > 0 -> "Positive"
   | _ -> "Unknown"
 
+let il = [1; 2; 3; 4; 5]
+let rec sum l =
+  match l with
+  | [] -> 0
+  | h::t -> h + sum t
+
+
+
+let test i f =
+  "i: " ^ string_of_int i ^ ", f: " ^ string_of_int (f i)
