@@ -2,3 +2,7 @@
  (public_name tutorial)
  (name main)
  (libraries tutorial))
+
+(env 
+ (dev
+ (flags (:standard -w -37 -w -26))))
